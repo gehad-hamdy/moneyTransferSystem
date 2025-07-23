@@ -11,12 +11,6 @@ public class AccountManager {
         this.accounts = new ConcurrentHashMap<>(initialAccounts);
     }
 
-    // public AccountManager() {
-    //     accounts.put("Mark", new Account("Mark", 100));
-    //     accounts.put("Jane", new Account("Jane", 50));
-    //     accounts.put("Adam", new Account("Adam", 0));
-    // }
-
     public String transfer(String from, String to, int amount) {
         if (from.equals(to))
             return "Transfer failed: sender and receiver cannot be the same.";
