@@ -17,7 +17,6 @@ Includes a suite of unit tests to validate concurrency.
 ## ? Prerequisites
 
 - Java 11 or higher
-- Maven (recommended) or your preferred build system
 - Git (optional)
 - IDE (optional but helpful): IntelliJ IDEA, VS Code, Eclipse
 
