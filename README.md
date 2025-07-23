@@ -24,11 +24,16 @@ Includes a suite of unit tests to validate concurrency.
 
 ### 1. Clone the Repository
 
-mkdir -p out
-javac -d out -cp "libs/*" src/model/Account.java src/service/AccountManager.java src/server/MoneyTransferHttpServer.java test/service/AccountManagerTest.java
+```bash
+    git clone https://github.com/gehad-hamdy/moneyTransferSystem.git
+    cd moneyTransferSystem   
+```
+ #### If you don't have Git installed, you can download the ZIP file from the repository and extract it.
 
 ### 2. Compile the Code
- javac -d out src/model/Account.java src/service/AccountManager.java src/server/MoneyTransferHttpServer.java src/test/AccountManagerTest.java
+```bash
+  javac -d out src/model/Account.java src/service/AccountManager.java src/server/MoneyTransferHttpServer.java src/test/AccountManagerTest.java
+```
 
 ### 3. Run test
 ```bash
@@ -41,13 +46,10 @@ javac -d out -cp "libs/*" src/model/Account.java src/service/AccountManager.java
   java -cp src server.MoneyTransferHttpServer 
 ```
    
-   ## Endpoints:
-     curl http://localhost:8000/balances
-     curl -X POST http://localhost:8000/transfer -d "from=Mark&to=Adam&amount=20"
-     curl http://localhost:8000/balances
-
+### 5. Endpoints:
 ```bash
-git clone <https://github.com/gehad-hamdy/moneyTransferSystem.git>
-cd <moneyTransferSystem>   
+  curl http://localhost:8000/balances
+  curl -X POST http://localhost:8000/transfer -d "from=Mark&to=Adam&amount=20"
+  curl http://localhost:8000/balances
 ```
 
